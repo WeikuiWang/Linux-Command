@@ -35,8 +35,8 @@ logname   |          当前登录用户名称
 ## 开关机相关
 命令|解释
 --|--
-shutdown -h now |    立即关机，root用户使用  
-shutdown -r     |    重启  
-init 0          |    立即关机，root用户使用  
-halt            |    关机，非root用户可以使用  
-poweroff        |    关机，非root用户可以使用            
+shutdown -h now |立即关机，root用户使用  
+shutdown -r     |重启  
+init 0          |立即关机，root用户使用  
+halt            |关机，非root用户可以使用  
+poweroff        |关机，非root用户可以使用            
