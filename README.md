@@ -26,10 +26,11 @@ vi               |打开或新建文件
 i 或者 a 或者 o   |在文件编辑模式下可开启插入模式，append(追加)insert(插入)o重起一行输入  
 :wq!             |保存并强制退出文件的编辑  
 more filename    |浏览文件内容  
-less filename    |浏览文件内容  
-mv 文件或文件名1 文件或文件名2 |重命名文件1为文件2  
-rm a.txt         |删除文件  
-rmdir filename   |在当前目录中删除该空文件夹  
+less filename    |浏览文件内容  
+tail -f filename |从尾部查看文件，并动态刷新内容
+mv 文件或文件名1 文件或文件名2 |重命名文件1为文件2  
+rm a.txt         |删除文件  
+rmdir filename   |在当前目录中删除该空文件夹  
 rmdir -rf filename |在当前目录下直接删除非空目录，-r: 向下递归，不管有多少级目录，一并删除，-f: 直接强行删除，不做任何提示   
     
 ## 用户相关
