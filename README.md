@@ -15,6 +15,7 @@ pwd                |显示工作路径
 --|--
 top    |
 vmstat    |
+ps -fu "username"    |显示当前用户下所以进程
 
 ## 文件和目录相关    
 命令|解释
@@ -22,12 +23,15 @@ vmstat    |
 ls               |查看目录中文件列表，参数-a(增加显示隐含目录),-l(其中，蓝色：目录，绿色：可执行文件红色：压缩文件，浅蓝：链接文件，灰色：其他文件，红底白字：错误的链接文件)  
 mkdir filename1  |在当前目录创建文件夹  
 cp file1 file2   |拷贝文件1命名为文件2  
-vi               |打开或新建文件  
-i 或者 a 或者 o   |在文件编辑模式下可开启插入模式，append(追加)insert(插入)o重起一行输入  
+vi               |打开或新建文件,shift+g至文件底端,ctrl+b翻页  
+i 或者 a 或者 o   |在文件编辑模式下可开启插入模式，append(追加)insert(插入)o重起一行输入  
 :wq!             |保存并强制退出文件的编辑  
 more filename    |浏览文件内容  
 less filename    |浏览文件内容  
-tail -f filename |从尾部查看文件，并动态刷新内容
+tail -f filename |从尾部查看文件，并动态刷新内容  
+grep "keyword" filename |查询显示含有关键词的所有行内容  
+cat -n filename  |显示文件内容和行数  
+cat -A filename  |显示不可打印字符，行尾显示"$"  
 mv 文件或文件名1 文件或文件名2 |重命名文件1为文件2  
 rm a.txt         |删除文件  
 rmdir filename   |在当前目录中删除该空文件夹  
@@ -38,7 +42,8 @@ rmdir -rf filename |在当前目录下直接删除非空目录，-r: 向下递�
 --|--
 w或者who  |查看系统中所有登陆的用户  
 logname   |当前登录用户名称  
-    
+cat /etc/passwd '竖杠' cut -f1 -d :  |查看系统所以用户  
+    
 ## 开关机相关
 命令|解释
 --|--
