@@ -44,7 +44,7 @@ rmdir -rf filename |在当前目录下直接删除非空目录，-r: 向下递�
 --|--
 w或者who  |查看系统中所有登陆的用户  
 logname   |当前登录用户名称  
-cat /etc/passwd '竖杠' cut -f1 -d :  |查看系统所以用户  
+cat /etc/passwd '竖杠' cut -f1 -d :  |查看系统所有用户  
     
 ## 开关机相关
 命令|解释
