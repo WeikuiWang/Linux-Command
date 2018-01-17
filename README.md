@@ -30,7 +30,7 @@ more filename    |浏览文件内容
 less filename    |浏览文件内容  
 tail -f filename |从尾部查看文件，并动态刷新内容  
 grep "keyword" filename |查询显示含有关键词的所有行内容  
-grep -v "keyword" filename |查询显示不包含关键词的所以行内容
+grep -v "keyword" filename |查询显示不包含关键词的所有行内容
 grep -c "keyword" filename |查询统计含有关键词的行数
 cat -n filename  |显示文件内容和行数  
 cat -A filename  |显示不可打印字符，行尾显示"$"  
