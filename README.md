@@ -22,8 +22,10 @@ ps -fu "username"    | 显示当前用户下所以进程
 命令|解释
 --|--
 ls               |查看目录中文件列表，参数-a(增加显示隐含目录),-l(其中，蓝色：目录，绿色：可执行文件,红色：压缩文件,浅蓝：链接文件，灰色：其他文件，红底白字：错误的链接文件)  
-mkdir filename1  |在当前目录创建文件夹  
-cp file1 file2   |拷贝文件1命名为文件2  
+ls -l &#124; grep "^d" &#124; wc -l  |统计当前目录下文件夹的个数  
+ls -lR 2018*/ &#124; grep "^-" &#124; wc -l  |统计当前目录下特定目录下文件个数，R表示包含子文件夹  
+mkdir filename1  |在当前目录创建文件夹  
+cp file1 file2   |拷贝文件1命名为文件2 
 vi               |打开或新建文件,shift+g至文件底端,ctrl+b向上翻页,ctrl+向下翻页  
 i 或者 a 或者 o   |在文件编辑模式下可开启插入模式，append(追加)insert(插入)o重起一行输入  
 :wq!             |保存并强制退出文件的编辑  
@@ -36,7 +38,7 @@ grep -c "keyword" filename |查询统计含有关键词的行数
 cat -n filename  |显示文件内容和行数  
 cat -A filename  |显示不可打印字符，行尾显示"$"  
 mv 文件或文件名1 文件或文件名2 |重命名文件1为文件2  
-tar -czvf newfile oldfile --exclude *.log | 打包并压缩文件
+tar -czvf newfile oldfile --exclude *.log | 打包并压缩文件,不包含日志文件夹
 rm a.txt         |删除文件  
 rmdir filename   |在当前目录中删除该空文件夹  
 rmdir -rf filename |在当前目录下直接删除非空目录，-r: 向下递归，不管有多少级目录，一并删除，-f: 直接强行删除，不做任何提示   
@@ -46,7 +48,7 @@ rmdir -rf filename |在当前目录下直接删除非空目录，-r: 向下递�
 --|--
 w或者who  |查看系统中所有登陆的用户  
 logname   |当前登录用户名称  
-cat /etc/passwd '竖杠' cut -f1 -d :  |查看系统所有用户  
+cat /etc/passwd &#124; cut -f1 -d :  |查看系统所有用户  
 
 ## 应用相关
 命令|解释
