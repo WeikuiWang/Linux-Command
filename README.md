@@ -37,7 +37,7 @@ grep -v "keyword" filename |查询显示不包含关键词的所有行内容
 grep -c "keyword" filename |查询统计含有关键词的行数
 cat -n filename  |显示文件内容和行数  
 cat -A filename  |显示不可打印字符，行尾显示"$"  
-mv 文件或文件名1 文件或文件名2 |重命名文件1为文件2  
+mv |重命名文件或者移动文件  
 tar -czvf newfile oldfile --exclude *.log | 打包并压缩文件,不包含日志文件夹
 rm a.txt         |删除文件  
 rmdir filename   |在当前目录中删除该空文件夹  
