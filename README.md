@@ -43,6 +43,7 @@ tar -czvf newfile oldfile --exclude *.log | 打包并压缩文件,不包含日�
 rm a.txt         |删除文件  
 rmdir filename   |在当前目录中删除该空文件夹  
 rmdir -rf filename |在当前目录下直接删除非空目录，-r: 向下递归，不管有多少级目录，一并删除，-f: 直接强行删除，不做任何提示   
+du | 默认列出当前目录下所有文件和文件夹占空间大小及总大小. du -sh * 显示当前目录下所有内容所占磁盘大小.
     
 ## 用户相关
 命令|解释
